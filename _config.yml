@@ -30,7 +30,10 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: minima
+theme: null   # disable the default theme
+remote_theme: tcbutler320/jek   # pulls the theme from GitHub
+plugins:
+  - jekyll-remote-theme
 plugins:
   - jekyll-feed
 
