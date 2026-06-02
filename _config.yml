@@ -31,14 +31,8 @@ github_username:  jekyll
 
 # Build settings
 theme: null   # disable the default theme
-<<<<<<< HEAD
 plugins:
 #  - jekyll-remote-theme
-=======
-remote_theme: tcbutler320/jek   # pulls the theme from GitHub
-plugins:
-  - jekyll-remote-theme
->>>>>>> 9df98b9476bc8551e9163c35a9dd0401be3402b5
 plugins:
   - jekyll-feed
 
