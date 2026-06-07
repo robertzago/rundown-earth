@@ -1,3 +1,119 @@
-.current {
-    color: green;
+/* SCSS HEX */
+$spring-green: #40f99bff;
+$cool-sky: #5da9e9ff;
+$mauve: #e2adf2ff;
+$velvet-purple: #6d326dff;
+$sweet-salmon: #e8998dff;
+
+$bg-black: black;
+$bg-white: white;
+
+
+@media (orientation: landscape) {
+    .content {
+    margin:auto;
+    width:50%;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        font-size:30px;
+    }
+    .content {
+        margin:auto;
+    }
+}
+
+@font-face {
+    font-family: "Smooch Sans";
+    src: url("/assets/fonts/SmoochSans-VariableFont_wght.tff");
+}
+
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Smooch Sans", system-ui, sans-serif;
+}
+
+
+.logo {
+    color: white;
+    font-size: 3rem;
+    border-right: white solid;
+    padding-inline: 1rem;
+    margin-right: 1rem;
+}
+
+.logo * {
+  color: inherit;
+  font-family: inherit;
+  text-decoration: inherit;
+
+}
+
+header {
+    width: 100%;          /* Forces header to take full width so content drops below */
+    display: flex;
+    align-items: center;  /* Centers logo and nav vertically */
+    padding-block: 0.5rem; 
+    box-sizing: border-box;
+}
+
+.top-navigation {
+    display: flex;
+    flex-direction: row;  /* Forces horizontal alignment */
+    flex-wrap: nowrap;    /* Prevents buttons from dropping to a new line */
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Ensure the navigation include file doesn't break the flex flow */
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.nav-button {
+    background: $bg-black;
+    border: solid 2px $spring-green;
+    width: 7rem;
+    height: 4.2rem;
+    margin-inline: 0.25rem;
+    color: rgb(251, 251, 251);
+    text-decoration: none;
+    font-size: 1.5rem;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;   
+}
+
+.nav-button div {
+    background-color: $spring-green;
+    height: 85%;
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    clear: both;
+}
+
+.nav-year {
+    
+}
+
+.current-button {
+    border-color: $cool-sky; 
+    color: rgb(87, 87, 87);
+}
+
+.current-button div {
+    background-color: $cool-sky;
 }
